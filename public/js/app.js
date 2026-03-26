@@ -164,5 +164,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+  // Después de toggle.addEventListener('click', ...)
+  // Agrega esto para reposicionar si se sale de pantalla
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    panel.classList.toggle('open');
 
+    // Reposicionar si se sale por la derecha
+    const rect = panel.getBoundingClientRect();
+    if (rect.right > window.innerWidth) {
+      panel.style.left = 'auto';
+      panel.style.right = '16px';
+    }
+  });
 });

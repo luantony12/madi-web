@@ -606,3 +606,25 @@ footer {
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
+
+/* ─── THEME PANEL responsive ─── */
+@media (max-width: 1024px) {
+  .theme-panel {
+    left: 80px;
+    bottom: 16px;
+    width: 200px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .theme-panel {
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    width: 240px;
+  }
+  .theme-panel.open {
+    transform: translateX(-50%);
+  }
+}
