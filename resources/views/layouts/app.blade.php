@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>@yield('title', 'MADI Solutions')</title>
-  <meta name="description" content="@yield('description', 'Empresa líder en construcción residencial, comercial e industrial con más de 20 años de experiencia.')">
+  <meta name="description" content="@yield('description', 'Empresa líder en diseño, construcción residencial, comercial e industrial con más de 10 años de experiencia.')">
 
   {{-- Fonts --}}
   <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">

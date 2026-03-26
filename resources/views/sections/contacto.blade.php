@@ -16,21 +16,21 @@
           <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
           <div>
             <h5>Oficina Central</h5>
-            <p>Av. Construcción 1480, Piso 8<br>Lima, Perú</p>
+            <p>Av. Francisco Palao A-12, San Sebastián <br>Cusco, Perú</p>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-icon"><i class="bi bi-telephone"></i></div>
           <div>
             <h5>Teléfono</h5>
-            <p>+51 1 234-5678<br>+51 987 654 321</p>
+            <p>+51 992-920-588<br>+51 986-060-819</p>
           </div>
         </div>
         <div class="contact-item">
           <div class="contact-icon"><i class="bi bi-envelope"></i></div>
           <div>
             <h5>Email</h5>
-            <p>proyectos@edilux.com.pe<br>info@edilux.com.pe</p>
+            <p>proyectos@madi.solutions<br>contacto@madi.solutions</p>
           </div>
         </div>
         <div class="contact-item">
@@ -72,14 +72,14 @@
             <label for="name">Nombre Completo</label>
             <input type="text" id="name" name="name"
                    value="{{ old('name') }}"
-                   placeholder="Juan Pérez"
+                   placeholder="Hernesto Pérez"
                    class="{{ $errors->has('name') ? 'input-error' : '' }}">
           </div>
           <div class="form-group">
             <label for="email">Correo Electrónico</label>
             <input type="email" id="email" name="email"
                    value="{{ old('email') }}"
-                   placeholder="juan@empresa.com"
+                   placeholder="hernesto@gmail.com"
                    class="{{ $errors->has('email') ? 'input-error' : '' }}">
           </div>
         </div>

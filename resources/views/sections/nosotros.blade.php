@@ -1,9 +1,9 @@
 <section id="nosotros">
   <div class="about-grid">
     <div class="about-image-wrap">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Equipo EDILUX en obra">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Equipo MADI en obra">
       <div class="about-image-badge">
-        <span>20</span>
+        <span>10</span>
         <span>Años</span>
       </div>
     </div>
@@ -15,7 +15,7 @@
         <div class="gold-line"></div>
       </div>
       <p>
-        MADI Solutions es una empresa dedicada a la ejecución de proyectos de construcción residencial, comercial e industrial con los más altos estándares de calidad, seguridad y respeto al medioambiente.
+        MADI Solutions es una empresa dedicada a la ejecución de proyectos de diseño, construcción residencial, comercial e industrial con los más altos estándares de calidad, seguridad y respeto al medioambiente.
       </p>
       <p>
         Contamos con un equipo multidisciplinario de ingenieros, arquitectos y técnicos especializados que garantizan la entrega puntual y excelente de cada obra, sin importar la escala o complejidad del proyecto.

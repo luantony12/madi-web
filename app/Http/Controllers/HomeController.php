@@ -9,10 +9,10 @@ class HomeController extends Controller
     public function index()
     {
         $stats = [
-            ['num' => '350+', 'label' => 'Proyectos Completados'],
-            ['num' => '20',   'label' => 'Años de Experiencia'],
-            ['num' => '85',   'label' => 'Profesionales en Planilla'],
-            ['num' => '12',   'label' => 'Ciudades Presentes'],
+            ['num' => '150+', 'label' => 'Proyectos Completados'],
+            ['num' => '10',   'label' => 'Años de Experiencia'],
+            ['num' => '50',   'label' => 'Profesionales en Planilla'],
+            ['num' => '5',   'label' => 'Ciudades Presentes'],
         ];
 
         $services = [
@@ -56,45 +56,68 @@ class HomeController extends Controller
 
         $projects = [
             [
-                'image'    => 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80',
+                'image'    => asset('images/projects/edi1.jpg'),
                 'category' => 'Residencial',
                 'year'     => '2024',
-                'title'    => 'Torre Mirador — 24 Pisos',
-                'featured' => true,
+                'title'    => 'Vivienda Familiar , Calca - Cusco — 4 Pisos',
+                'featured' => false,
             ],
             [
-                'image'    => 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80',
+                'image'    => asset('images/projects/cm1.jpeg'),
                 'category' => 'Comercial',
                 'year'     => '2023',
-                'title'    => 'Plaza Élite',
+                'title'    => 'Morena Peruvian Kitchen - Cusco',
+                'featured' => false,
+            ],
+
+             [
+                'image'    => asset('images/projects/edi3.jpg'),
+                'category' => 'Residencial',
+                'year'     => '2024',
+                'title'    => 'Vivienda Familiar , Calca - Cusco — 4 Pisos',
                 'featured' => false,
             ],
             [
                 'image'    => 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80',
                 'category' => 'Comercial',
-                'year'     => '2023',
-                'title'    => 'Oficinas Vértex',
+                'year'     => '2024',
+                'title'    => 'Oficinas Vértex - Lima',
                 'featured' => false,
             ],
             [
-                'image'    => 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80',
+                'image'    => asset('images/projects/edi2.jpg'),
                 'category' => 'Residencial',
-                'year'     => '2022',
-                'title'    => 'Residencia Lago Norte',
+                'year'     => '2024',
+                'title'    => 'Vivienda Familiar , Calca - Cusco — 4 Pisos',
                 'featured' => false,
             ],
             [
-                'image'    => 'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80',
+                'image'    => asset('images/projects/ind1.jpg'),
                 'category' => 'Industrial',
                 'year'     => '2022',
-                'title'    => 'Planta Logística Sur',
+                'title'    => 'Colegio Innova School - HUANCARO - CUSCO',
+                'featured' => false,
+            ],
+
+            [
+                'image'    => asset('images/projects/ind2.jpg'),
+                'category' => 'Industrial',
+                'year'     => '2022',
+                'title'    => 'Colegio Innova School - LARAPA -CUSCO',
                 'featured' => false,
             ],
             [
-                'image'    => 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
+                'image'    => asset('images/projects/ind3.jpg'),
+                'category' => 'Industrial',
+                'year'     => '2022',
+                'title'    => 'Popeyes - Cusco',
+                'featured' => false,
+            ],
+            [
+                'image'    => asset('images/projects/cm3.jpg'),
                 'category' => 'Comercial',
-                'year'     => '2021',
-                'title'    => 'Hotel Grand Vista',
+                'year'     => '2025',
+                'title'    => 'Morena Peruvian Kitchen - Cusco',
                 'featured' => false,
             ],
         ];

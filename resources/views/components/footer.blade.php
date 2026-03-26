@@ -1,9 +1,9 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <h2>MA<span>DI</span></h2>
+      <h2><span>MADI</span></h2>
       <div class="tagline">Construyendo el futuro desde 2004</div>
-      <p>Empresa líder en proyectos de construcción residencial, comercial e industrial con presencia en todo el país y estándares internacionales de calidad.</p>
+      <p>Empresa líder en proyectos de diseño, construcción residencial, comercial e industrial con presencia en todo el país y estándares internacionales de calidad.</p>
       <div class="social-links" style="margin-top:24px;">
         <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
         <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
@@ -37,6 +37,6 @@
 
   <div class="footer-bottom">
     <p>© {{ date('Y') }} MADI Constructora. Todos los derechos reservados.</p>
-    <p style="font-size:12px; color:var(--gray);">RUC: 201299999 &nbsp;|&nbsp; Licencia de construcción N° 00456</p>
+    <p style="font-size:12px; color:var(--gray);">RUC: 2000099999 &nbsp;|&nbsp; Licencia de construcción N° 00456</p>
   </div>
 </footer>

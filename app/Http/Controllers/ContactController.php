@@ -21,15 +21,12 @@ class ContactController extends Controller
             'name.required'    => 'El nombre es obligatorio.',
             'email.required'   => 'El correo electrónico es obligatorio.',
             'email.email'      => 'Ingrese un correo electrónico válido.',
-            'message.required' => 'El mensaje es obligatorio.',
+            'message.required' => 'La descripción del proyecto es obligatoria.',
         ]);
 
-        // Enviar correo (configurar MAIL_* en .env)
-        // Mail::to(config('mail.contact_to', 'proyectos@edilux.com.pe'))
-        //     ->send(new ContactMail($validated));
+        Mail::to(config('mail.to', env('MAIL_TO')))
+            ->send(new ContactMail($validated));
 
-        return back()
-            ->with('success', '¡Gracias! Su solicitud fue enviada. Le contactaremos en menos de 24 horas.')
-            ->withInput(['name' => '']);
+        return back()->with('success', '¡Gracias! Su solicitud fue enviada. Le contactaremos en menos de 24 horas.');
     }
 }

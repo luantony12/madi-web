@@ -7,10 +7,10 @@
   @include('sections.hero')
   @include('sections.nosotros')
   @include('sections.stats')
- <?php //@include('sections.servicios')?>
- <?php // @include('sections.proyectos')?>
- <?php //@include('sections.proceso')?>
- <?php // @include('sections.contacto')?>
+  @include('sections.servicios')
+  @include('sections.proyectos')
+  @include('sections.proceso')
+  @include('sections.contacto')
 @endsection
 
   
