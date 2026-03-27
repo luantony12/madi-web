@@ -39,9 +39,6 @@
   {{-- Scroll Top --}}
   <a href="#hero" id="scroll-top"><i class="bi bi-arrow-up"></i></a>
 
-  {{-- Main JS --}}
-  <script src="{{ asset('js/app.js') }}"></script>
-
   @stack('scripts')
 
   {{-- WhatsApp flotante --}}
