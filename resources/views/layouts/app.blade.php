@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
   <link rel="stylesheet" href="{{ asset('css/app.css') }}?v={{ time() }}">
-  <script src="{{ asset('js/app.js') }}?v={{ time() }}"></script>
+  <script src="{{ asset('js/app.js') }}?v=1.0"></script>
 
   @stack('styles')
 </head>
