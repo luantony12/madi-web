@@ -37,7 +37,6 @@ const themes = {
     '--gray-light': '#7A9FC0',
     '--white':      '#EEF2F8',
   },
-
   green: {
     '--gold':       '#C9A84C',
     '--gold-light': '#E8C97A',
@@ -70,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
   applyTheme(localStorage.getItem('madi-theme') || 'gold');
 
   /* ── Nav activo en scroll ── */
-  const navLinks    = document.querySelectorAll('.nav-item[href]');
-  const sections    = document.querySelectorAll('section[id]');
+  const navLinks     = document.querySelectorAll('.nav-item[href]');
+  const sections     = document.querySelectorAll('section[id]');
   const scrollTopBtn = document.getElementById('scroll-top');
 
   window.addEventListener('scroll', () => {
@@ -164,18 +163,5 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-  // Después de toggle.addEventListener('click', ...)
-  // Agrega esto para reposicionar si se sale de pantalla
-  toggle.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    panel.classList.toggle('open');
 
-    // Reposicionar si se sale por la derecha
-    const rect = panel.getBoundingClientRect();
-    if (rect.right > window.innerWidth) {
-      panel.style.left = 'auto';
-      panel.style.right = '16px';
-    }
-  });
 });
