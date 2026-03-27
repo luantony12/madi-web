@@ -449,6 +449,32 @@ footer {
 }
 #scroll-top.visible { opacity: 1; }
 
+/* ─── WHATSAPP FLOTANTE ─── */
+#whatsapp-btn {
+  position: fixed;
+  bottom: 88px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  background: #25D366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  z-index: 999;
+  transition: transform 0.25s, background 0.25s;
+  box-shadow: 0 4px 12px rgba(37,211,102,0.4);
+}
+#whatsapp-btn:hover {
+  background: #20ba5a;
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+
 /* ─── ANIMATIONS ─── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }

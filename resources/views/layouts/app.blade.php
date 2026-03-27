@@ -18,9 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 
   {{-- Main CSS --}}
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=1.0">
 
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v={{ time() }}">
   <script src="{{ asset('js/app.js') }}?v=1.0"></script>
 
   @stack('styles')
@@ -44,5 +43,15 @@
   <script src="{{ asset('js/app.js') }}"></script>
 
   @stack('scripts')
+
+  {{-- WhatsApp flotante --}}
+  <a href="https://wa.me/51992920588" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    id="whatsapp-btn"
+    title="Chatea con nosotros">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
 </body>
 </html>
