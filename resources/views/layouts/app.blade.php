@@ -8,6 +8,7 @@
   <meta name="description" content="@yield('description', 'Empresa líder en diseño, construcción residencial, comercial e industrial con más de 10 años de experiencia.')">
 
   {{-- Fonts --}}
+ 
   <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +19,9 @@
 
   {{-- Main CSS --}}
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v={{ time() }}">
+  <script src="{{ asset('js/app.js') }}?v={{ time() }}"></script>
 
   @stack('styles')
 </head>
