@@ -36,7 +36,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© {{ date('Y') }} MADI Constructora. Todos los derechos reservados.</p>
+    <p>© {{ date('Y') }} MADI Soluciones. Todos los derechos reservados.</p>
     <p style="font-size:12px; color:var(--gray);">RUC: 2000099999 &nbsp;|&nbsp; Licencia de construcción N° 00456</p>
   </div>
 </footer>
