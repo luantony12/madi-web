@@ -15,7 +15,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   {{-- Bootstrap Icons --}}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">-->
+
+  <link rel="stylesheet" href="{{ asset('fonts/bootstrap-icons/bootstrap-icons.min.css') }}">
 
   {{-- Main CSS --}}
   <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=1.0">

@@ -73,6 +73,7 @@
             <input type="text" id="name" name="name"
                    value="{{ old('name') }}"
                    placeholder="Hernesto Pérez"
+                   autocomplete="name"
                    class="{{ $errors->has('name') ? 'input-error' : '' }}">
           </div>
           <div class="form-group">
@@ -80,6 +81,7 @@
             <input type="email" id="email" name="email"
                    value="{{ old('email') }}"
                    placeholder="hernesto@gmail.com"
+                   autocomplete="email"
                    class="{{ $errors->has('email') ? 'input-error' : '' }}">
           </div>
         </div>
@@ -89,11 +91,12 @@
             <label for="phone">Teléfono</label>
             <input type="tel" id="phone" name="phone"
                    value="{{ old('phone') }}"
-                   placeholder="+51 999 888 777">
+                   placeholder="+51 999 888 777"
+                   autocomplete="tel">
           </div>
           <div class="form-group">
             <label for="type">Tipo de Proyecto</label>
-            <select id="type" name="type">
+            <select id="type" name="type" autocomplete="off">
               <option value="">Seleccionar...</option>
               @foreach(['Construcción Residencial','Edificio Comercial','Obra Industrial','Remodelación','Otro'] as $opt)
                 <option value="{{ $opt }}" {{ old('type') === $opt ? 'selected' : '' }}>{{ $opt }}</option>
@@ -104,7 +107,7 @@
 
         <div class="form-group">
           <label for="budget">Presupuesto Estimado</label>
-          <select id="budget" name="budget">
+          <select id="budget" name="budget" autocomplete="off">
             <option value="">Seleccionar rango...</option>
             @foreach(['Menos de $50,000','$50,000 – $200,000','$200,000 – $1,000,000','Más de $1,000,000'] as $b)
               <option value="{{ $b }}" {{ old('budget') === $b ? 'selected' : '' }}>{{ $b }}</option>
@@ -115,6 +118,7 @@
         <div class="form-group">
           <label for="message">Descripción del Proyecto</label>
           <textarea id="message" name="message"
+                    autocomplete="off"
                     placeholder="Cuéntenos sobre su proyecto: ubicación, dimensiones, requerimientos especiales..."
                     class="{{ $errors->has('message') ? 'input-error' : '' }}">{{ old('message') }}</textarea>
         </div>
