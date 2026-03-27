@@ -103,6 +103,7 @@ body {
   flex-shrink: 0;
 }
 
+
 /* ─── THEME PANEL ─── */
 .theme-panel {
   position: fixed;
@@ -115,15 +116,15 @@ body {
   width: 240px;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(-10px);
-  transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
-  z-index: 9999;
+  transform: translateX(0);
+  transition: opacity 0.25s, visibility 0.25s;
+  z-index: 99999;
 }
 .theme-panel.open {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
 }
+
 .theme-panel-title {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 10px;
