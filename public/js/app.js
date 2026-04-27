@@ -63,7 +63,17 @@ function applyTheme(key) {
 }
 
 /* ── Todo en un solo DOMContentLoaded ── */
+
 document.addEventListener('DOMContentLoaded', () => {
+
+  const loader = document.getElementById('pageLoader');
+  if (loader) {
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        loader.classList.add('hidden');
+      }, 3200);
+    });
+  }
 
   /* ── Aplicar tema guardado ── */
   applyTheme(localStorage.getItem('madi-theme') || 'gold');

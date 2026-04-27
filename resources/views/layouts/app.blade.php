@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
   {{-- Bootstrap Icons --}}
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">-->
 
@@ -27,6 +27,21 @@
   @stack('styles')
 </head>
 <body>
+
+  {{-- PANTALLA DE CARGA --}}
+  <div id="pageLoader">
+    <div class="loader-wrap">
+      <div class="logo-text">MADI</div>
+      <div class="logo-line"></div>
+      <div class="logo-sub">Soluciones Integrales</div>
+      <div class="logo-sub">Cusco, Perú</div>
+      <div class="progress-wrap">
+        <div class="progress-bar" id="loaderBar"></div>
+      </div>
+      <div class="progress-num" id="loaderNum">CARGANDO</div>
+    </div>
+  </div>
+
 
   {{-- Sidebar Navigation --}}
   @include('components.sidebar')

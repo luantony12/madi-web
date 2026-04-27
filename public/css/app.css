@@ -238,7 +238,7 @@ section { padding: 100px 80px; }
   position: absolute; inset: 0;
   background:
     linear-gradient(to right, rgba(13,26,46,0.97) 40%, rgba(13,26,46,0.3) 100%),
-    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80') center/cover no-repeat;
+    url('/images/projects/madi-hero.png') center/cover no-repeat;
 }
 .hero-texture {
   position: absolute; inset: 0;
@@ -623,4 +623,110 @@ footer {
   letter-spacing: 0.5px;
   display: block;
   margin-bottom: 2px;
+}
+
+
+/* ─── PAGE LOADER ─── */
+#pageLoader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+#pageLoader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-text {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(72px, 12vw, 140px);
+  letter-spacing: 24px;
+  color: transparent;
+  background: linear-gradient(180deg, #4a7fbf 0%, #1a3a6e 40%, #0d1f42 100%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px #4a7fbf;
+  background-clip: text;
+  line-height: 1;
+  filter: drop-shadow(0 0 40px rgba(34,70,122,0.8));
+  animation: revealText 1.2s cubic-bezier(0.16,1,0.3,1) forwards;
+  opacity: 0;
+}
+.logo-line {
+  width: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #22467a, transparent);
+  margin: 16px 0;
+  animation: expandLine 0.8s ease forwards;
+  animation-delay: 0.7s;
+}
+.logo-sub {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  -webkit-text-stroke: 0.5px #22467a;
+  letter-spacing: 8px;
+  color: #22467a;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.9s;
+  margin-top: 4px;
+}
+.progress-wrap {
+  width: 200px;
+  height: 1px;
+  background: rgba(34,70,122,0.2);
+  margin-top: 48px;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+  animation-delay: 1.2s;
+}
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #22467a, #4a7fbf);
+  animation: loadBar 1.8s cubic-bezier(0.4,0,0.2,1) forwards;
+  animation-delay: 1.3s;
+}
+.progress-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #22467a;
+  margin-top: 12px;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes revealText {
+  0%   { opacity:0; transform:translateY(30px) scaleX(0.95); letter-spacing:40px; }
+  100% { opacity:1; transform:translateY(0)    scaleX(1);    letter-spacing:24px; }
+}
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(10px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes expandLine {
+  from { width:0; }
+  to   { width:240px; }
+}
+@keyframes fadeIn {
+  from { opacity:0; }
+  to   { opacity:1; }
+}
+@keyframes loadBar {
+  0%   { width:0%; }
+  60%  { width:75%; }
+  100% { width:100%; }
 }

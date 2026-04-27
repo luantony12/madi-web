@@ -8,7 +8,7 @@
       <span>MADI</span><br>SOLUCIONES
     </h1>
     <p class="hero-subtitle fade-up fade-up-3">
-      Transformamos lo simple en obras de ingeniería y diseño de primer nivel. Con más de 10 años de experiencia construyendo proyectos residenciales y comerciales.
+      Transformamos lo simple en obras de ingeniería y diseño de primer nivel. Con más de 8 años de experiencia construyendo proyectos residenciales y comerciales.
     </p>
     <div class="hero-cta fade-up fade-up-4">
       <a href="#proyectos" class="btn-primary-gold">
@@ -17,6 +17,8 @@
       <a href="#contacto" class="btn-outline-gold">Cotizar Ahora</a>
     </div>
   </div>
+
+  
 
   <div class="hero-stats">
     <div class="hero-stat">
