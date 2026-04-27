@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="{{ asset('fonts/bootstrap-icons/bootstrap-icons.min.css') }}">
 
   {{-- Main CSS --}}
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=1.1">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=1.2">
 
-  <script src="{{ asset('js/app.js') }}?v=1.0"></script>
+  <script src="{{ asset('js/app.js') }}?v=1.2"></script>
 
   @stack('styles')
 </head>

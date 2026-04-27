@@ -61,7 +61,7 @@ class HomeController extends Controller
                 'items' => [
                     'Supervisión de proyectos'        => 'Control y seguimiento técnico para garantizar calidad, plazos y cumplimiento normativo',
                     'Consultoría'                     => 'Asesoría especializada en arquitectura, ingeniería y gestión de obras',
-                    'Venta de materiales'             => 'Suministro de productos de primera calidad para proyectos residenciales, comerciales e industriales',
+                    'Venta de materiales'             => 'Suministro de productos de primera calidad para proyectos residenciales, comerciales',
                 ],
             ],
            
