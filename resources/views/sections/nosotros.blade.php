@@ -1,7 +1,7 @@
 <section id="nosotros">
   <div class="about-grid">
     <div class="about-image-wrap">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Equipo MADI en obra">
+      <img src="/images/projects/madi-no.png" alt="Equipo MADI en obra">
       <div class="about-image-badge">
         <span>8</span>
         <span>Años</span>
@@ -31,7 +31,7 @@
         </div>
         <div class="about-value">
           <i class="bi bi-shield-check"></i>
-          <div><strong>Seguridad Laboral</strong>Zero accidentes como meta diaria</div>
+          <div><strong>Seguridad Laboral</strong>Cero accidentes como meta diaria</div>
         </div>
         <div class="about-value">
           <i class="bi bi-patch-check"></i>
