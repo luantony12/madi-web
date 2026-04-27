@@ -9,7 +9,7 @@
       <button class="filter-btn active" data-filter="all">Todos</button>
       <button class="filter-btn" data-filter="Residencial">Residencial</button>
       <button class="filter-btn" data-filter="Comercial">Comercial</button>
-      <button class="filter-btn" data-filter="Industrial">Industrial</button>
+      <button class="filter-btn" data-filter="Industrial">Mantenimientos</button>
     </div>
   </div>
 

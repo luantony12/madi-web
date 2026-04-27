@@ -3,7 +3,7 @@
     <div class="about-image-wrap">
       <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Equipo MADI en obra">
       <div class="about-image-badge">
-        <span>10</span>
+        <span>8</span>
         <span>Años</span>
       </div>
     </div>

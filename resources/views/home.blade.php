@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'MADI Solutions — Proyectos con Excelencia')
-@section('description', 'Empresa líder en construcción residencial, comercial e industrial con más de 20 años de experiencia en Lima y todo el Perú.')
+@section('description', 'Empresa líder en construcción residencial, comercial e industrial con más de 10 años de experiencia en Lima y todo el Perú.')
 
 @section('content')
   @include('sections.hero')

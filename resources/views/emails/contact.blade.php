@@ -30,6 +30,13 @@
         <label>Cliente</label>
         <p>{{ $data['name'] }}</p>
       </div>
+      
+      {{-- NUEVO --}}
+      <div class="field">
+        <label>DNI</label>
+        <p>{{ $data['dni'] }}</p>
+      </div>
+
 
       <div class="field">
         <label>Correo electrónico</label>

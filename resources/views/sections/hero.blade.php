@@ -20,11 +20,11 @@
 
   <div class="hero-stats">
     <div class="hero-stat">
-      <div class="hero-stat-num">10+</div>
+      <div class="hero-stat-num">8+</div>
       <div class="hero-stat-label">Años de Experiencia</div>
     </div>
     <div class="hero-stat">
-      <div class="hero-stat-num">150+</div>
+      <div class="hero-stat-num">42+</div>
       <div class="hero-stat-label">Obras Completadas</div>
     </div>
     <div class="hero-stat">

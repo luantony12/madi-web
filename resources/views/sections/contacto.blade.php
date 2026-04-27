@@ -76,13 +76,14 @@
                    autocomplete="name"
                    class="{{ $errors->has('name') ? 'input-error' : '' }}">
           </div>
-          <div class="form-group">
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email"
-                   value="{{ old('email') }}"
-                   placeholder="hernesto@gmail.com"
-                   autocomplete="email"
-                   class="{{ $errors->has('email') ? 'input-error' : '' }}">
+            <div class="form-group">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni"
+                  value="{{ old('dni') }}"
+                  placeholder="20345678"
+                  autocomplete="off"
+                  maxlength="8"
+                  class="{{ $errors->has('dni') ? 'input-error' : '' }}">
           </div>
         </div>
 
@@ -94,23 +95,29 @@
                    placeholder="+51 999 888 777"
                    autocomplete="tel">
           </div>
-          <div class="form-group">
-            <label for="type">Tipo de Proyecto</label>
-            <select id="type" name="type" autocomplete="off">
-              <option value="">Seleccionar...</option>
-              @foreach(['Construcción Residencial','Edificio Comercial','Obra Industrial','Remodelación','Otro'] as $opt)
-                <option value="{{ $opt }}" {{ old('type') === $opt ? 'selected' : '' }}>{{ $opt }}</option>
-              @endforeach
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email"
+                    value="{{ old('email') }}"
+                    placeholder="juan@empresa.com"
+                    autocomplete="email"
+                    class="{{ $errors->has('email') ? 'input-error' : '' }}">
+            </div>
         </div>
 
         <div class="form-group">
-          <label for="budget">Presupuesto Estimado</label>
-          <select id="budget" name="budget" autocomplete="off">
-            <option value="">Seleccionar rango...</option>
-            @foreach(['Menos de $50,000','$50,000 – $200,000','$200,000 – $1,000,000','Más de $1,000,000'] as $b)
-              <option value="{{ $b }}" {{ old('budget') === $b ? 'selected' : '' }}>{{ $b }}</option>
+          <label for="type">Tipo de Proyecto</label>
+          <select id="type" name="type" autocomplete="off">
+            <option value="">Seleccionar...</option>
+            @foreach([
+              'Arquitectura e Ingeniería',
+              'Mantenimiento y Remodelaciones',
+              'Saneamiento Físico y Legal',
+              'Otros Servicios'
+            ] as $opt)
+              <option value="{{ $opt }}" {{ old('type') === $opt ? 'selected' : '' }}>
+                {{ $opt }}
+              </option>
             @endforeach
           </select>
         </div>
@@ -118,8 +125,8 @@
         <div class="form-group">
           <label for="message">Descripción del Proyecto</label>
           <textarea id="message" name="message"
-                    autocomplete="off"
                     placeholder="Cuéntenos sobre su proyecto: ubicación, dimensiones, requerimientos especiales..."
+                    autocomplete="off"
                     class="{{ $errors->has('message') ? 'input-error' : '' }}">{{ old('message') }}</textarea>
         </div>
 
