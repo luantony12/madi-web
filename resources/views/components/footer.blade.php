@@ -2,13 +2,13 @@
   <div class="footer-grid">
     <div class="footer-brand">
       <h2><span>MADI</span></h2>
-      <div class="tagline">Construyendo el futuro desde 2004</div>
+      <div class="tagline">Construyendo el futuro desde 2018</div>
       <p>Empresa líder en proyectos de diseño, construcción residencial, comercial e industrial con presencia en todo el país y estándares internacionales de calidad.</p>
       <div class="social-links" style="margin-top:24px;">
         <a href="https://www.instagram.com/disenodeinteriorescusco?igsh=MWlpY2JpajA2M2Y2aA==" class="social-link"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com/AIAcusco?" class="social-link"><i class="bi bi-facebook"></i></a>
+        {{-- <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a> --}}
+        {{-- <a href="#" class="social-link"><i class="bi bi-youtube"></i></a> --}}
       </div>
     </div>
 

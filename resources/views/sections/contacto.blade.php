@@ -23,7 +23,7 @@
           <div class="contact-icon"><i class="bi bi-telephone"></i></div>
           <div>
             <h5>Teléfono</h5>
-            <p>+51 992-920-588<br>+51 986-060-819</p>
+            <p>+51 992-920-588</p>
           </div>
         </div>
         <div class="contact-item">
